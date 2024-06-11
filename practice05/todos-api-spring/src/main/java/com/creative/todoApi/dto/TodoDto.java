@@ -1,6 +1,6 @@
-package com.creative.eduSurvey.dto;
+package com.creative.todoApi.dto;
 
-import com.creative.eduSurvey.entity.Todo;
+import com.creative.todoApi.entity.Todo;
 
 import lombok.Data;
 

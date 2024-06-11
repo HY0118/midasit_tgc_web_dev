@@ -1,4 +1,4 @@
-package com.creative.eduSurvey.config;
+package com.creative.todoApi.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -19,7 +19,7 @@ public class SwaggerConfig {
     @Bean
     public GroupedOpenApi api() {
         String[] paths = {"/**"};
-        String[] packagesToscan = {"com.creative.eduSurvey.controller"};
+        String[] packagesToscan = {"com.creative.todoApi.controller"};
 
         return GroupedOpenApi.builder().group("api")
                 .pathsToMatch(paths)

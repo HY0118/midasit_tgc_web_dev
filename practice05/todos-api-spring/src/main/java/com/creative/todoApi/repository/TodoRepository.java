@@ -1,6 +1,6 @@
-package com.creative.eduSurvey.repository;
+package com.creative.todoApi.repository;
 
-import com.creative.eduSurvey.entity.Todo;
+import com.creative.todoApi.entity.Todo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

@@ -28,8 +28,9 @@ function Todos() {
     }
 
     const setTodo = (todo)=> {
-        updateTodo(todo);
-        setTodos(todos.map(t=>t.id === todo.id ? todo : t));
+        console.log(todo);
+        updateTodo(todo)
+            .then(todo => setUpdate(!update));
     }
 
     return (

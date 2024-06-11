@@ -1,8 +1,8 @@
-package com.creative.eduSurvey.service;
+package com.creative.todoApi.service;
 
-import com.creative.eduSurvey.dto.TodoDto;
-import com.creative.eduSurvey.entity.Todo;
-import com.creative.eduSurvey.repository.TodoRepository;
+import com.creative.todoApi.dto.TodoDto;
+import com.creative.todoApi.entity.Todo;
+import com.creative.todoApi.repository.TodoRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

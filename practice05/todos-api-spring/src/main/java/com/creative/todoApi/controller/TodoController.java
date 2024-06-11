@@ -1,14 +1,12 @@
-package com.creative.eduSurvey.controller;
+package com.creative.todoApi.controller;
 
-import com.creative.eduSurvey.dto.TodoDto;
-import com.creative.eduSurvey.service.TodoService;
+import com.creative.todoApi.dto.TodoDto;
+import com.creative.todoApi.service.TodoService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.ArrayList;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @RestController
 @AllArgsConstructor
@@ -31,15 +29,13 @@ public class TodoController {
     }
 
     @DeleteMapping("/todo/{id}")
-    public void deleteTodo(Long id) {
+    public void deleteTodo(@PathVariable Long id) {
         todoService.deleteTodo(id);
     }
 
-    @PutMapping("/todo/{id}")
-    public TodoDto putTodos(@PathVariable Long id,
-                            @RequestBody TodoDto todoDto) {
-        todoDto.setId(id);
-        todoService.updateTodo(id, Optional.ofNullable(todoDto.getContent()),
+    @PutMapping("/todo")
+    public TodoDto putTodos(@RequestBody TodoDto todoDto) {
+        todoService.updateTodo(todoDto.getId(), Optional.ofNullable(todoDto.getContent()),
                 Optional.ofNullable(todoDto.getDone()));
         return todoDto;
     }

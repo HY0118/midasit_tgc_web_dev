@@ -1,4 +1,4 @@
-package com.creative.eduSurvey;
+package com.creative.todoApi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

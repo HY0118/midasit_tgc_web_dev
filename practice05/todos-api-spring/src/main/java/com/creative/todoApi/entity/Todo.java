@@ -1,4 +1,4 @@
-package com.creative.eduSurvey.entity;
+package com.creative.todoApi.entity;
 
 import lombok.Getter;
 

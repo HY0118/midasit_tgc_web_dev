@@ -1,9 +1,8 @@
-package com.creative.eduSurvey.config;
+package com.creative.todoApi.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
